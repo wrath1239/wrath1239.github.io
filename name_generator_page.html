@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="name_stylesheet.css">
+<title>Save the Trees</title>
+<style>
+    /* Changes how the generator looks to the user */
+    .generator {
+        width: 300px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 2px solid forestgreen;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    /* This is where the generated name will pop up after the user clicks the button */
+    input[type="text"] {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 4px;
+        font-size: 18px;
+    }
+    /* This is the button that will be called 'generate name' or something similar */
+    input[type="button"] {
+        color: forestgreen;
+        4
+        width: 100%;
+        padding: 10px;
+        font-size: 18px;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+
+    <!-- Top navigation bar -->
+    <div class="topnav"> 
+        <a href="discover_page.html">Discover</a>
+        <!-- Place holders, Not working atm -->
+        <a href="search_page.html">Search</a>
+        <a class="active" href="name_generator_page.html">Name Generator</a>
+        <a href="about_page.html">About</a>
+        <a class="loginButton" href="login.html">Login</a>    
+    </div>
+
+<!-- This is where the names actually change to the more appropriate name for this task-->
+<div class="generator">
+    <input type="text" id="generatedName" disabled>
+    <br>
+    <input type="button" value="Generate Name" onclick="generateName()">
+</div>
+
+<!-- This links to the Javascript where the potential first names and lst names will be stored and also where the function that randomly generates names is (only generates combinations of names that Ive chosen) -->
+<script src="name_generator.js"> </script>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+/* Changes color of the background page */
+body{
+    background-color:rgb(8, 8, 51);
+    margin:0%
+    
+}
+
+/* Changes color of the top navigation bar */
+.topnav{
+    background-color: #000;
+    overflow:hidden;
+}
+
+/* Styles the links in the top navigation bar */
+.topnav a{
+    float:left;
+    color:aliceblue;
+    text-align:center;
+    padding:14px 16px;
+    text-decoration:none;
+    font-size:17px;
+}
+
+/* Styles the links when hovered over */
+.topnav a:hover{
+    background-color:forestgreen;
+    color:black;
+}
+
+/* Styles the link leading to the page your currently on */
+.topnav a.active{
+    background-color: forestgreen;
+    color:black;
+}
+
+/* Makes the login button hover to the right */
+.topnav a.loginButton{
+    float:right;
+    color:crimson;
+    text-align:center;
+    padding:14px 16px;
+    text-decoration:none;
+    font-size:17px;
+}
+
+/* Makes the poster not touch the edges and forces it to the left */
+.main_post{
+    float:left;
+    padding:5%;
+    height:1080px;
+    width:540px;
+}
+/*h1{
+    float:right;
+    font-size: 20px;
+    color:white;
+}*/
+/* This will style the postre */
+.interactivePoster{
+    position:relative;
+    height:1080px;
+    width:540px;
+}
+/* This styles the button that will hover over the post */
+.donationButton{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+    border: none;
+    cursor:pointer;
+    font-size:large;
+    padding: none;
+    background-color: red;
+}
